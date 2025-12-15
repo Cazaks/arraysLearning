@@ -2,10 +2,6 @@ package timeClassCaseStudy;
 
 public class Time1Test {
 
-    private static void displayTime(String header, Time1 t){
-        System.out.printf("%s%nUniversal time: %s%nStandard time: %s%n", header, t.toUniversalString(), t.toString());
-    }
-
     public static void main(String[] args) {
 
         Time1 time = new Time1();
@@ -25,5 +21,10 @@ public class Time1Test {
 
         displayTime("After calling set time with invalid values", time);
     }
+
+    private static void displayTime(String header, Time1 t){
+        System.out.printf("%s%nUniversal time: %s%nStandard time: %s%n", header, t.toUniversalString(), t.toString());
+    }
+
 
 }
